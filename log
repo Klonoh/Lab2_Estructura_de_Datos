@@ -2,3 +2,25 @@ Fri Mar 27 05:47:31 PM UTC 2026:
  tests:  0|6
 total_score: 0/60
 254817d
+Fri Mar 27 05:56:42 PM UTC 2026: 
+ list.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:79:21: error: invalid initializer
+   79 |     Node new_node = createNode(data);
+      |                     ^~~~~~~~~~
+list.c:80:13: error: invalid type argument of ‘->’ (have ‘Node’)
+   80 |     new_node->prev = list->current;
+      |             ^~
+list.c:81:13: error: invalid type argument of ‘->’ (have ‘Node’)
+   81 |     new_node->next = list->current->next;
+      |             ^~
+list.c:82:33: error: incompatible types when assigning to type ‘Node *’ from type ‘Node’
+   82 |     list->current->next->prev = new_node;
+      |                                 ^~~~~~~~
+list.c:83:27: error: incompatible types when assigning to type ‘Node *’ from type ‘Node’
+   83 |     list->current->next = new_node;
+      |                           ^~~~~~~~
+254d7cd
