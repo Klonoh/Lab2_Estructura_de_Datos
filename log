@@ -68,3 +68,8 @@ list.c:83:27: error: incompatible types when assigning to type ‘Node *’ from
    83 |     list->current->next = new_node;
       |                           ^~~~~~~~
 6f5f92c
+Fri Mar 27 06:02:17 PM UTC 2026: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|0
+e4a418b
