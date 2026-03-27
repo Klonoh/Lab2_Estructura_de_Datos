@@ -217,3 +217,17 @@ Fri Mar 27 06:35:57 PM UTC 2026:
  tests:  0|6
 total_score: 0/60
 bbf04ef
+Fri Mar 27 06:37:00 PM UTC 2026: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:80:22: error: dereferencing ‘void *’ pointer [-Werror]
+   80 |     new_node->data = *data;
+      |                      ^~~~~
+list.c:80:20: error: void value not ignored as it ought to be
+   80 |     new_node->data = *data;
+      |                    ^
+cc1: all warnings being treated as errors
+fc5ad82
