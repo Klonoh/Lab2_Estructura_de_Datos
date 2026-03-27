@@ -80,6 +80,10 @@ void pushCurrent(List * list, void * data) {
     if(firstList(list)==NULL){
         list->head = new_node;
     }
+    else if(list->current->next == NULL){
+        new_node->prev = list->current;
+        list->current->next = new_node;
+    }
     else{
         new_node->prev = list->current;
         new_node->next = list->current->next;
