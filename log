@@ -73,3 +73,13 @@ Fri Mar 27 06:02:17 PM UTC 2026:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 e4a418b
+Fri Mar 27 06:02:29 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:80:17: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   80 |     *new_node = createNode(data);
+      |                 ^~~~~~~~~~
+cd90879
