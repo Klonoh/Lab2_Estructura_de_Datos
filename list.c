@@ -82,6 +82,9 @@ void * prevList(List * list) {
     if(list->head == NULL){
         return NULL;
     }
+    if(list->current == NULL){
+        return NULL;
+    }
     if(list->current == list->head){
         return NULL;
     }
