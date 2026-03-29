@@ -364,3 +364,14 @@ Sun Mar 29 03:34:57 AM UTC 2026:
  tests:  11|1
 total_score: 50/60
 8efb06a
+Sun Mar 29 03:57:22 AM UTC 2026: 
+ list.c | 34 ++++++++++++++++++++++++++++++++++
+ 1 file changed, 34 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:171:25: error: ‘der’ undeclared (first use in this function)
+  171 |         list->current = der;
+      |                         ^~~
+list.c:171:25: note: each undeclared identifier is reported only once for each function it appears in
+483f169
