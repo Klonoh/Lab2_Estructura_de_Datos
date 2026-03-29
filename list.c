@@ -156,8 +156,7 @@ void * popCurrent(List * list) {
         void *dato = list->current->data;
         Node *der = list->current->next;
         der->prev = NULL;
-        free(list->current);
-        free(list->head);
+        
         list->current = der;
         list->head = der;
         return dato;
@@ -167,7 +166,7 @@ void * popCurrent(List * list) {
         void *dato = list->current->data;
         Node *izq = list->current->prev;
         izq->next = NULL;
-        free(list->current);
+        
         list->current = izq;
         list->tail = izq;
         return dato;
@@ -177,7 +176,7 @@ void * popCurrent(List * list) {
     Node *der = list->current->next;
     izq->next = der;
     der->prev = izq;
-    free(list->current);
+    
     list->current = der;
     return dato;
     
