@@ -168,8 +168,8 @@ void * popCurrent(List * list) {
         Node *izq = list->current->prev;
         izq->next = NULL;
         free(list->current);
-        list->current = der;
-        list->tail = der;
+        list->current = izq;
+        list->tail = izq;
         return dato;
     }
     void *dato = list->current->data;
